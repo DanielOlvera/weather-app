@@ -42,6 +42,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/temperature"
         android:textSize="18sp"
+        android:text="@string/wind_speed"
         tools:text="Wind speed"/>
 
     <ImageView
