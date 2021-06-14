@@ -13,6 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"
         tools:text="City"/>
 
     <TextView
@@ -21,6 +24,7 @@
         android:layout_height="wrap_content"
         android:text="@string/current_temperature"
         app:layout_constraintTop_toBottomOf="@+id/city"
+        android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
@@ -28,6 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="14 °C / 39 °F"
+        android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/city"
         app:layout_constraintLeft_toRightOf="@+id/temperatureLabel"/>
 
@@ -36,6 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/temperature"
+        android:textSize="18sp"
         tools:text="Wind speed"/>
 
     <ImageView
@@ -57,6 +63,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginBottom="25dp"
+        android:textSize="18sp"
         android:text="@string/standard_deviation"/>
 
     <Button
