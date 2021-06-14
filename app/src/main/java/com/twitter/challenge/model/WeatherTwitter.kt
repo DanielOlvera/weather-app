@@ -1,76 +1,30 @@
+package com.twitter.challenge.model
 
-package com.twitter.challenge.model;
+import com.google.gson.annotations.Expose
+import com.google.gson.annotations.SerializedName
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
-public class WeatherTwitter {
-
+class WeatherTwitter {
     @SerializedName("coord")
     @Expose
-    private Coord coord;
+    var coord: Coord? = null
+
     @SerializedName("weather")
     @Expose
-    private Weather weather;
+    var weather: Weather? = null
+
     @SerializedName("wind")
     @Expose
-    private Wind wind;
+    var wind: Wind? = null
+
     @SerializedName("rain")
     @Expose
-    private Rain rain;
+    var rain: Rain? = null
+
     @SerializedName("clouds")
     @Expose
-    private Clouds clouds;
+    var clouds: Clouds? = null
+
     @SerializedName("name")
     @Expose
-    private String name;
-
-    public Coord getCoord() {
-        return coord;
-    }
-
-    public void setCoord(Coord coord) {
-        this.coord = coord;
-    }
-
-    public Weather getWeather() {
-        return weather;
-    }
-
-    public void setWeather(Weather weather) {
-        this.weather = weather;
-    }
-
-    public Wind getWind() {
-        return wind;
-    }
-
-    public void setWind(Wind wind) {
-        this.wind = wind;
-    }
-
-    public Rain getRain() {
-        return rain;
-    }
-
-    public void setRain(Rain rain) {
-        this.rain = rain;
-    }
-
-    public Clouds getClouds() {
-        return clouds;
-    }
-
-    public void setClouds(Clouds clouds) {
-        this.clouds = clouds;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    var name: String? = null
 }
