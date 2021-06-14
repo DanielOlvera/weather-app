@@ -7,5 +7,5 @@ import retrofit2.http.GET
 interface ApiInterface {
 
     @GET("current.json")
-    fun getWeather(): Call<WeatherTwitter>
+    fun getWeatherService(): Call<WeatherTwitter>
 }

@@ -3,28 +3,28 @@ package com.twitter.challenge.model
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-class WeatherTwitter {
+data class WeatherTwitter(
     @SerializedName("coord")
     @Expose
-    var coord: Coord? = null
+    var coord: Coord? = null,
 
     @SerializedName("weather")
     @Expose
-    var weather: Weather? = null
+    var weather: Weather? = null,
 
     @SerializedName("wind")
     @Expose
-    var wind: Wind? = null
+    var wind: Wind? = null,
 
     @SerializedName("rain")
     @Expose
-    var rain: Rain? = null
+    var rain: Rain? = null,
 
     @SerializedName("clouds")
     @Expose
-    var clouds: Clouds? = null
+    var clouds: Clouds? = null,
 
     @SerializedName("name")
     @Expose
     var name: String? = null
-}
+)
