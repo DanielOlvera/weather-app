@@ -1,14 +1,13 @@
 package com.twitter.challenge.view
 
 import android.content.Context
-import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.twitter.challenge.R
-import com.twitter.challenge.TemperatureConverter
+import com.twitter.challenge.utils.TemperatureConverter
 import com.twitter.challenge.utils.fiveChars
 import com.twitter.challenge.viewmodel.WeatherViewModel
 import kotlinx.android.synthetic.main.activity_main.*
