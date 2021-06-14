@@ -26,5 +26,7 @@ class WeatherActivity : AppCompatActivity() {
         val temperatureView = findViewById<View>(R.id.temperature) as TextView
         temperatureView.text =
             getString(R.string.temperature, 34f, TemperatureConverter.celsiusToFahrenheit(34f))
+
+
     }
 }
