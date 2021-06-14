@@ -10,7 +10,7 @@ import com.twitter.challenge.R
 import com.twitter.challenge.TemperatureConverter
 import com.twitter.challenge.viewmodel.WeatherViewModel
 
-class MainActivity : AppCompatActivity() {
+class WeatherActivity : AppCompatActivity() {
 
     lateinit var context: Context
     lateinit var weatherViewModel: WeatherViewModel
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        context = this@MainActivity
+        context = this@WeatherActivity
 
         weatherViewModel = ViewModelProvider(this).get(WeatherViewModel::class.java)
 
